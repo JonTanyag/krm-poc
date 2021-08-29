@@ -1,0 +1,42 @@
+.main-content {
+    flex-wrap: flex;
+    background-color: yellow;
+    width: 100%;
+    height: 100%;
+    .section {
+        background-color: green;
+        height: 100%;
+        width: 100%;
+
+        .section-details {
+            background-color: red;
+        }
+    }
+    .section-2 {
+        background-color: blue;
+        height: 500px;
+        width: 100%;
+
+        .section-details-2 {
+            background-color: red;
+        }
+    }
+    .section-3 {
+        background-color: aqua;
+        height: 500px;
+        width: 100%;
+
+        .section-details-3 {
+            background-color: red;
+        }
+    }
+    .section-4 {
+        background-color: darkmagenta;
+        height: 500px;
+        max-width: 100%;
+
+        .section-details-4 {
+            background-color: red;
+        }
+    }
+}
