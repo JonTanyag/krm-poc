@@ -18,6 +18,10 @@ phases:
     commands:
         - echo Build started
         - ng build --prod
+  post_build:
+    commands:
+        - echo Updating files in the S3 bucket...
+        - aws s3 sync dist/krm-web/ s3://krm-poc -- delete
 artifacts:
     files:
         - '**/*'
